@@ -1,0 +1,187 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.centered-block {
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.main-title {
+    margin: 0 0 20px;
+    font-size: 2em;
+    color: #62c173;
+}
+
+.highlighted-text {
+    font-size: 1.2em;
+    color: #62c173;
+    font-weight: bold;
+}
+
+.matches-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.matches-table th, .matches-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+.matches-table th {
+    background-color: #444;
+}
+
+.matches-table tr:hover {
+    background-color: #444;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.action-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #498e54;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 2px solid #498e54;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #42814c;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pages-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 180px;
+}
+
+.pages-wrapper .page {
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    transform: scale(0.7);
+    cursor: pointer;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.pages-wrapper .current-page {
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.pages-wrapper .page.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.pages-wrapper .page:hover {
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+/* Общие настройки для формы */
+.new-match-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Группы элементов формы */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #62c173;
+}
+
+/* Поля ввода */
+input[type="text"] {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Поля ввода при фокусе */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #62c173;
+}
+
+/* Кнопка отправки */
+.submit-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #62c173;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Кнопка при наведении */
+.submit-button:hover {
+    background-color: #498e54;
+}
